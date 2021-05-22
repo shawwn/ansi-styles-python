@@ -2,12 +2,6 @@
 
 A port of the Node.js package `ansi-styles` to Python.
 
-WARNING: This repo is in development. It was automatically generated with [mkpylib](https://github.com/shawwn/scrap/blob/master/mkpylib). If you're reading this message, it means that I use this repo for my own purposes right now. It might not do anything at all; the default functionality is `print('TODO')`.
-
-If you really want to try it out, feel free. I recommend reading through the code and commit history to see if it does what you need, or [ask me](#contact) for status updates.
-
-Stay tuned!
-
 ## Quickstart
 
 ```
@@ -19,15 +13,18 @@ python3 -m pip install -U ansi-styles
 Once it's installed, you can do this:
 
 ```py
-import ansi_styles
+from ansi_styles import ansiStyles as styles
 
-print('TODO')
-```
+print(f'{styles.green.open}Hello world!{styles.green.close}')
 
-... which will print this:
-
-```
-TODO
+# Color conversion between 256/truecolor
+# NOTE: When converting from truecolor to 256 colors, the original color
+#       may be degraded to fit the new color palette. This means terminals
+#       that do not support 16 million colors will best-match the
+#       original color.
+print(f'{styles.color.ansi(styles.rgbToAnsi(199, 20, 250))}Hello World{styles.color.close}')
+print(f'{styles.color.ansi256(styles.rgbToAnsi256(199, 20, 250))}Hello World{styles.color.close}')
+print(f'{styles.color.ansi16m(*styles.hexToRgb("#abcdef"))}Hello World{styles.color.close}')
 ```
 
 ## License
