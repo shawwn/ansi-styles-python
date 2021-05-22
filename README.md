@@ -1,16 +1,16 @@
 # ansi-styles
 
+> [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code#Colors_and_Styles) for styling strings in the terminal
+
 A port of the Node.js package [`ansi-styles`](https://github.com/chalk/ansi-styles) to Python.
 
-## Quickstart
+## Install
 
 ```
 python3 -m pip install -U ansi-styles
 ```
 
-(That strange-looking setup command is because I've found it to be the most reliable. The `pip` command often aliases to python 2, and `pip3` often installs to the wrong Python package directory.)
-
-Once it's installed, you can do this:
+## Usage
 
 ```py
 from ansi_styles import ansiStyles as styles

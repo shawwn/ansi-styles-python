@@ -3,7 +3,7 @@ name = "ansi-styles"
 version = "0.2.1"
 readme = "README.md"
 homepage = "https://github.com/shawwn/ansi-styles-python"
-description = "A port of the Node.js package `ansi-styles` to Python"
+description = "ANSI escape codes for styling strings in the terminal"
 authors = ["Shawn Presser"]
 license = "MIT"
 
