@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ansi-styles"
-version = "0.2.0"
+version = "0.2.1"
 readme = "README.md"
 homepage = "https://github.com/shawwn/ansi-styles-python"
 description = "A port of the Node.js package `ansi-styles` to Python"
