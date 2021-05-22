@@ -1,6 +1,6 @@
 # ansi-styles
 
-A port of the Node.js package `ansi-styles` to Python.
+A port of the Node.js package [`ansi-styles`](https://github.com/chalk/ansi-styles) to Python.
 
 ## Quickstart
 
